@@ -9,6 +9,7 @@ P{_n}(X)=
 2XP_{n-1}(X)-2(n-1)p_{n-2}(X)  & n>1
 \end{cases}
 $$
+![](http://latex.codecogs.com/gif.latex?%24%24P%7B_n%7D%28X%29%3D%5Cbegin%7Bcases%7D1%20%26%20n%3D0%5C%5C2X%20%26%20n%3D1%5C%5C2XP_%7Bn-1%7D%28X%29-2%28n-1%29p_%7Bn-2%7D%28X%29%20%26%20n%3E1%5Cend%7Bcases%7D%24%24)
 ###
 实现
 ```
