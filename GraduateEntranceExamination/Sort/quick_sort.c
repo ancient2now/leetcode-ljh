@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+int count = 0;
 void array_print(int * array, int len);
 
 void quick_sort(int * array, int len);
@@ -8,7 +9,7 @@ void quick_sort_recursive(int * array, int start, int end);
 
 int main(int argc, char const *argv[])
 {
-    int array[] = {10,0,3,0,5,6,7,8,9};
+    int array[] = {1,2,3,4,5,6,7,8,9};
     int len = sizeof(array)/sizeof(int);
     array_print(array, len);
     quick_sort(array, len);
@@ -21,7 +22,6 @@ void quick_sort(int * array, int len){
 }
 
 void quick_sort_recursive(int * array, int start, int end){
-    printf("=====\n");
     if(start > end)
         return;
     int pivot = array[start];
@@ -43,6 +43,10 @@ void quick_sort_recursive(int * array, int start, int end){
             right--;
         }
     }
+    count++;
+    printf("count=%d\n", count);
+    array_print(array, 9);
+
     array[left] = pivot;
     quick_sort_recursive(array, start, left-1);
     quick_sort_recursive(array, left+1, end);
