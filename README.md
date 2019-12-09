@@ -9,6 +9,7 @@ Leetcode
 - [1022. Sum of Root To Leaf Binary Numbers](Leetcode/Tree/1022.Sum-of-Root-To-Leaf-Binary-Numbers.c)
 - [976. Largest Perimeter Triangle](Leetcode/Sort/976.Largest-Perimeter-Triangle.c)
 - [349. Intersection of Two Arrays](Leetcode/Sort/349.Intersection-of-Two-Arrays.c)
+- [242. Valid Anagram]()
 ###
 考研真题
 - [数组左移N位](GraduateEntranceExamination/circular-left-shift.c)
