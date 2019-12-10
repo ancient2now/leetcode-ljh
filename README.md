@@ -15,10 +15,10 @@ Leetcode
 - [数组左移N位](GraduateEntranceExamination/circular-left-shift.c)
 - [栈应用递归函数](GraduateEntranceExamination/stack_fucntion.md)
 ###
-排序 
--[快速排序](GraduateEntranceExamination/Sort/quick_sort.c)
--[堆排序](GraduateEntranceExamination/Sort/heap_sort.c)
--[归并排序](GraduateEntranceExamination/Sort/merge_sort.c)
+排序
+- [快速排序](GraduateEntranceExamination/Sort/quick_sort.c)
+- [堆排序](GraduateEntranceExamination/Sort/heap_sort.c)
+- [归并排序](GraduateEntranceExamination/Sort/merge_sort.c)
 ###
 查找
 - [二分查找](Search/binary-search.c)
