@@ -18,6 +18,7 @@ Leetcode
 排序 
 -[快速排序](GraduateEntranceExamination/Sort/quick_sort.c)
 -[堆排序](GraduateEntranceExamination/Sort/heap_sort.c)
+-[归并排序](GraduateEntranceExamination/Sort/merge_sort.c)
 ###
 查找
 - [二分查找](Search/binary-search.c)
