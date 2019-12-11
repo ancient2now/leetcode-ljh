@@ -37,9 +37,23 @@ static void test_sort(void)
     puts("有序数组:");
     array_print(sorted, max_size);
 
-    /*bubble sort test cases*/
-    BubbleSort(rand_array, max_size);
-    puts("冒泡排序后:");
+    /*bubble sort*/
+    // BubbleSort(rand_array, max_size);
+    // puts("冒泡排序后:");
+
+    /*select sort*/
+    // SelectSort(rand_array, max_size);
+    // puts("选择排序后:");
+
+
+    /*insert sort*/
+    // InsertSort(rand_array, max_size);
+    // puts("插入排序后:");
+
+    /*shell sort*/
+    ShellSort(rand_array, max_size);
+    puts("希尔排序后:");
+
     array_print(rand_array, max_size);
 
     for(int i = 0; i < max_size; i++){
