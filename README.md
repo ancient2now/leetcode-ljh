@@ -16,6 +16,10 @@ Leetcode
 - [栈应用递归函数](GraduateEntranceExamination/stack_fucntion.md)
 ###
 排序
+- [冒泡排序](GraduateEntranceExamination/Sort/bubble_sort.c)
+- [选择排序](GraduateEntranceExamination/Sort/selection_sort.c)
+- [插入排序](GraduateEntranceExamination/Sort/insertion_sort.c)
+- [希尔排序](GraduateEntranceExamination/Sort/shell_sort.c)
 - [快速排序](GraduateEntranceExamination/Sort/quick_sort.c)
 - [堆排序](GraduateEntranceExamination/Sort/heap_sort.c)
 - [归并排序](GraduateEntranceExamination/Sort/merge_sort.c)
