@@ -1,65 +1,39 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "test.h"
+void heapify(int arr[], int root, int len){
+    if(root > len)
+        return;
+    int left = root*2 + 1;
+    int right = root*2 + 2;
+    int max = root;
+    if(left < len && arr[left] > arr[max])
+        max = left;
+    if(right < len && arr[right] > arr[max])
+        max = right;
 
-void swap(int arr[], int  a, int b);
-void heapify(int arr[], int start, int end);
-void heap_sort(int arr[], int len);
-void array_print(int * array, int len);
-
-
-int main(int argc, char const *argv[])
-{
-    int arr[] = {10,2,1,40,3,12,7,8,12};
-    int len = sizeof(arr)/sizeof(int);
-    array_print(arr, len);
-    heap_sort(arr, len);
-    array_print(arr, len);
-    return 0;
+    if(max != root){
+        int temp = arr[root];
+        arr[root] = arr[max];
+        arr[max] = temp;
+    }
+    heapify(arr, left, len);
+    heapify(arr, right, len);
 }
-
-
-void heap_sort(int arr[], int len){
-    int root = len/2 - 1;
-    /*构建大顶堆*/
-    for(int i = root; i >= 0; i--){
+void HeapSort(int arr[], int len){
+    //构建大顶堆
+    int i;
+    for(i = (len-1) / 2; i >=0; i--){
         heapify(arr, i, len);
     }
-    /*堆调整*/
-    for(int i = len; i > 0; i--){
-        swap(arr, 0, i-1);
+    //调整堆，每次取出堆顶最大的那个元素
+    for(i = len; i > 0; i--){
+        int temp = arr[0];
+        arr[0] = arr[i-1];
+        arr[i-1] = temp;
         heapify(arr, 0, i-1);
     }
 }
 
 
-void heapify(int arr[], int root, int len){
-    if(root >= len)
-        return;
-    int left = root*2 + 1;
-    int right = root*2 + 2;
-    int max = root;
-    if(left < len && arr[left] > arr[max]){
-        max = left;
-    }
-    if(right < len && arr[right] > arr[max]){
-        max = right;
-    }
-    if(max != root){
-        swap(arr, root, max);
-        heapify(arr, max, len);
-    }
-}
 
 
-void swap(int arr[], int a, int b){
-    int temp = arr[a];
-    arr[a] = arr[b];
-    arr[b] = temp;
-}
-void array_print(int * array, int len){
-    for(int i = 0; i < len; i++){
-        printf("%d ", array[i]);
-    }
-    puts("");
-}
 

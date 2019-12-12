@@ -55,8 +55,13 @@ static void test_sort(void)
     // puts("希尔排序后:");
 
     /*quick sort*/
-    QuickSort(rand_array, max_size);
-    puts("快速排序后:");
+    // QuickSort(rand_array, max_size);
+    // puts("快速排序后:");
+
+    /*heap sort*/
+    HeapSort(rand_array, max_size);
+    puts("堆排序后:");
+    
 
     array_print(rand_array, max_size);
 
