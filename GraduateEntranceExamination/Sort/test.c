@@ -59,9 +59,11 @@ static void test_sort(void)
     // puts("快速排序后:");
 
     /*heap sort*/
-    HeapSort(rand_array, max_size);
-    puts("堆排序后:");
+    // HeapSort(rand_array, max_size);
+    // puts("堆排序后:");
     
+    MergeSort(rand_array, 0, max_size-1);
+    puts("归并排序:");
 
     array_print(rand_array, max_size);
 
