@@ -10,6 +10,7 @@ Leetcode
 - [976. Largest Perimeter Triangle](Leetcode/Sort/976.Largest-Perimeter-Triangle.c)
 - [349. Intersection of Two Arrays](Leetcode/Sort/349.Intersection-of-Two-Arrays.c)
 - [242. Valid Anagram](Leetcode/Sort/242.Valid-Anagram.c)
+- [226. Invert Binary Tree](Leetcode/Tree/226.Invert-Binary-Tree.c)
 ###
 考研真题
 - [数组左移N位](GraduateEntranceExamination/circular-left-shift.c)
